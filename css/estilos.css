@@ -1,4 +1,314 @@
 * {
     margin: 0px;
     padding: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: antiquewhite;
+}
+.colornavbar {
+    padding: 5px;
+    background-color: #EA6344;
+}
+.navbar-nav {
+    background-color: #222026;
+}
+.colorlink {
+    color:antiquewhite !important;
+    padding: 5px;
+}
+footer {
+    background-color: #EA6344;
+}
+footer div {
+    border-top:solid #000D18 1px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+footer div p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    margin-top: 10px;
+}
+/* Productos */
+.divprod1{
+    background-color: #222026;
+    padding: 10px;
+    margin: 10px;
+}
+.divprod2{
+    background-color: #222026;
+    padding: 10px;
+    margin: 10px;
+}
+.divprod3{
+    background-color: #222026;
+    padding: 10px;
+    margin: 10px;
+}
+.divprod4{
+    background-color: #222026;
+    padding: 10px;
+    margin: 10px;
+}
+.divprod5{
+    background-color: #222026;
+    padding: 10px;
+    margin: 10px;
+}
+.itemp {
+    color: antiquewhite;
+    margin-top: 5px;
+}
+/* Pantallas 320 */
+@media screen and (min-width: 320px) {
+/* index */
+.presentacion {
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divpres {
+    display: none;
+}
+.vidpres {
+    width: 90%;
+}
+.cuatroindex {
+    background-color: #222026;
+    display: flex;
+    flex-direction: column;
+}
+.cuatroindex section {
+    padding: 20px;
+}
+.cuatroindex section p {
+    color: antiquewhite;
+    padding: 5px;
+}
+.botonredir {
+    text-decoration: none;
+    color: #222026;
+    background-color: #EA6344;
+    padding: 5px;
+    border-radius: 3px ;
+}
+.sectprod {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sectprod div {
+    width: 90%;
+}
+.footaprende {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Contacto */
+.sectcontac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectcontac div {
+    background-color: #222026;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+.botoncontac {
+    color: antiquewhite;
+    background-color: #EA6344;
+    border-radius: 2px;
+    margin-bottom: 5px;
+
+}
+/* Vidrios */
+.vidrios {
+    display: flex;
+    flex-direction: column;
+}
+.vidrios section {
+    background-color: #222026;
+    margin: 20px;
+    width: 90%;
+    padding: 10px;
+}
+.vidrios section div {
+    margin: 5px 0 5px 0;
+}
+.vidrios section h2 {
+    color: antiquewhite;
+}
+.vidrios section p {
+    color: antiquewhite;
+}
+}
+/* Pantallas 1024 */
+@media screen and (min-width: 1024px){
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.nav-item {
+    border-left:solid antiquewhite 0.5px ;
+}
+/* index */
+.presentacion {
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.divpres {
+    display: block;
+    width: 40%;
+    height: 250px;
+    padding: 5rem;
+    color: #000D18;
+    font-weight: bold;
+    background-image: url(../assets/fondopres.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+}
+.divpres h1 {
+    text-shadow: 5px 5px 10px #EA6344;
+}
+.divpres p {
+    text-shadow: 5px 5px 10px #EA6344;
+}
+.vidpres {
+    width: 50%;
+    margin: 0 0 0 10px;
+}
+.cuatroindex {
+    background-color: #222026;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cuatroindex section {
+    padding: 20px;
+}
+.cuatroindex section p {
+    color: antiquewhite;
+    padding: 5px;
+}
+.botonredir {
+    text-decoration: none;
+    color: #222026;
+    background-color: #EA6344;
+    padding: 5px;
+    border-radius: 3px ;
+}
+footer div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+/* Productos */
+.divprod1{
+    width: 800px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "itemimg1 itemp1";
+}
+.divprod2{
+    width: 800px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "itemimg2 itemp2";
+}
+.divprod3{
+    width: 800px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "itemimg2 itemp2";
+}
+.divprod4{
+    width: 800px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "itemimg2 itemp2";
+}
+.divprod5{
+    width: 800px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "itemimg2 itemp2";
+}
+/* Contacto */
+.sectcontac {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+}
+/* aprende */
+.sectaprende {
+    margin: 30px;
+}
+.videoaprende {
+    width: 90%;
+}
+.footaprende {
+    position: relative;
+    bottom: none;
+    width: 100%;
+}
+/* Vidrios */
+.vidrios {
+    align-items: center;
+}
+.sectvidrios2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 300px);
+}
+.sectvidrios3 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 300px);
+}
 }
