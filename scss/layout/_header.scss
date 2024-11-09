@@ -1,0 +1,44 @@
+.navbar{
+    background-color: $color-primario;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.navbar-expand-lg {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.container-fluid{
+    padding: 0;
+    flex-wrap: nowrap !important;
+    a{
+        margin: 0;
+    }
+    .barracolor{
+        justify-content: space-around;
+        padding: 0;
+        height: 100px;
+        border-radius: 5px;
+        background-color: $color-secundario;
+        .me-auto{
+            margin: 0;
+            padding: 20px 0 20px 0;
+            justify-content: center;
+            display: $flex
+        }
+    }
+}
+.me-auto{
+    margin-right: 0 !important;
+    li{
+        padding: 0 25px;
+        display: $flex;
+        align-items: center;
+        .colorlink{
+            color: $color-fuente !important;
+        }
+    }
+}

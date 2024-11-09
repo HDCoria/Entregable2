@@ -1,0 +1,50 @@
+@media screen and (min-width: 1024px) {
+    .navbar-brand{
+        padding-right: 15% !important;
+    }
+    .presentacion{
+        margin: 0 15px 20px 15px;
+        display: $flex;
+        justify-content: space-around;
+        align-items: center;
+        iframe{
+            width: 50%;
+            height: 400px;
+            margin: 0;
+            border-radius: $border-radius;
+            margin-right: 5px;
+        }
+        .divpres{
+            width: 50%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(../../assets/fondopres.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: $border-radius;
+            margin-left: 5px;
+        }
+    }
+    .cuatroindex{
+        background-color: $color-secundario;
+        border-radius: $border-radius $border-radius 0 0;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        a{
+            img{
+                border-radius: $border-radius;
+            }
+        }
+        p{
+            color: $color-fuente;
+            margin: 0;
+            padding: 5px;
+        }
+    }
+}

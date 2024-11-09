@@ -1,0 +1,81 @@
+@media screen and (min-width: 320px) and (max-width: 990px){
+    /*correcion al header*/
+    .container-fluid{
+        display: inline !important;
+        a{
+        padding: 0;
+        display: inline;
+        margin-right: 10%;
+        }
+    }
+    .me-auto{
+        padding: 0 !important;
+    }
+    .navbar-toggler{
+        display: inline;
+    }
+    .show{
+        display: block;
+    }
+    @media screen and (min-width: 320px){
+    /*index*/
+    main{
+        .presentacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            iframe {
+                width: 75%;
+                margin-bottom: 30px;
+                padding: 0;
+                height: 300px;
+                border-radius: 10px;
+            }
+            .divpres{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 75%;
+                height: 300px;
+                background-image: url(../../assets/fondopres.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 0 150px;
+                border-radius: 10px;
+                h1{
+                    font-weight: bolder;
+                    color: $color-secundario;
+                    text-shadow: 5px 5px 10px $color-primario;
+                }
+                p{
+                    font-weight: bolder;
+                    color: $color-secundario;
+                    text-shadow: 5px 5px 10px antiquewhite;
+                }
+            }
+        }
+        .cuatroindex{
+            background-color: $color-secundario;
+            border-radius: 10px 10px 0px 0px;
+            padding: 20px 0 0 0;
+            section{
+                padding-bottom: 20px;
+                a{
+                    img{
+                        border-radius: $border-radius;
+                    }
+                }
+                p{
+                    padding: 5px;
+                    color: $color-fuente;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+}

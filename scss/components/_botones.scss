@@ -1,0 +1,17 @@
+.botonredir{
+    background-color: $color-primario;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: $color-secundario;
+    transition: 0.5s;
+    &:hover{
+        background-color: $colordetransicion;
+    }
+}
+.nav-item{
+    transition: 0.25s;
+    &:hover{
+    background-color: $colordetransicion;
+    }
+}

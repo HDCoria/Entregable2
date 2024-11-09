@@ -1,0 +1,13 @@
+footer{
+    width: 100%;
+    background-color: $color-primario;
+    div{
+        display: $flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+}
+.footaprende {
+    position: absolute;
+    bottom: 0;
+}
