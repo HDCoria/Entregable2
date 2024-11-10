@@ -1,0 +1,14 @@
+@media screen and (min-width: 320px) and (max-width: 1023px){
+   .sectaprende {
+    iframe{
+        width: 90%;
+        border-radius: 10px;
+        height: 315px;
+    }
+   }
+   .footaprende {
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+    }
+}

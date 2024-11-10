@@ -1,0 +1,14 @@
+@media screen and (min-width: 1024px){
+    .sectcontac {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 300px);
+        gap: 20px;
+        margin-bottom: 30px;
+        .contacto{
+            padding: 20px 250px;
+        }
+    }
+}

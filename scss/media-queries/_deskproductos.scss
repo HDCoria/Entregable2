@@ -1,0 +1,16 @@
+@media screen and (min-width: 1024px){
+    .producto{
+        margin-bottom: 30px !important;
+        width: 800px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(1, 300px);
+        grid-template-areas: 
+        "itemimg1 itemp1";
+        p{
+            margin-right: 30px !important;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@media screen and (min-width: 1024px){
+    .sectvidrios2 {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(2, 300px);
+    }
+    .sectvidrios3 {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(2, 300px);
+    }
+}

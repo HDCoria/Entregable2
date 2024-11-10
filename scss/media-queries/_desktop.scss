@@ -4,29 +4,41 @@
     }
     .presentacion{
         margin: 0 15px 20px 15px;
+        height: 400px;
         display: $flex;
-        justify-content: space-around;
+        flex-direction: row !important;
+        justify-content: space-around !important;
         align-items: center;
         iframe{
-            width: 50%;
-            height: 400px;
-            margin: 0;
+            width: 40% !important;
+            height: 400px !important;
+            margin: 0 !important;
             border-radius: $border-radius;
             margin-right: 5px;
         }
         .divpres{
-            width: 50%;
-            height: 400px;
+            width: 40% !important;
+            height: 400px !important;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            background-image: url(../../assets/fondopres.jpg);
+            background-image: url(../assets/fondopres.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: $border-radius;
             margin-left: 5px;
+            h1{
+                font-weight: bolder;
+                color: $color-secundario;
+                text-shadow: 5px 5px 10px $color-primario;
+            }
+            p{
+                font-weight: bolder;
+                color: $color-secundario;
+                text-shadow: 5px 5px 10px antiquewhite;
+            }
         }
     }
     .cuatroindex{

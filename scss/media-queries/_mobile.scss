@@ -10,6 +10,7 @@
     }
     .me-auto{
         padding: 0 !important;
+        margin: 0px !important;
     }
     .navbar-toggler{
         display: inline;
@@ -17,7 +18,14 @@
     .show{
         display: block;
     }
-    @media screen and (min-width: 320px){
+    .barracolor{
+        height: 165px !important;
+    }
+    .nav-item{
+        padding: 5px 10px !important;
+    }
+}
+@media screen and (min-width: 320px){
     /*index*/
     main{
         .presentacion{
@@ -41,7 +49,7 @@
                 justify-content: center;
                 width: 75%;
                 height: 300px;
-                background-image: url(../../assets/fondopres.jpg);
+                background-image: url(../assets/fondopres.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 padding: 0 150px;
@@ -77,5 +85,4 @@
             }
         }
     }
-}
 }

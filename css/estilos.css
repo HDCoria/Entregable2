@@ -9,7 +9,11 @@ body {
   background-color: antiquewhite;
 }
 
-.botonredir {
+h1 {
+  margin-bottom: 10px;
+}
+
+.botonredir, .botoncontac {
   background-color: #B54312;
   padding: 5px 10px;
   border-radius: 5px;
@@ -17,7 +21,7 @@ body {
   color: #222026;
   transition: 0.5s;
 }
-.botonredir:hover {
+.botonredir:hover, .botoncontac:hover {
   background-color: #EA6344;
 }
 
@@ -34,30 +38,42 @@ body {
   }
   .presentacion {
     margin: 0 15px 20px 15px;
+    height: 400px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row !important;
+    justify-content: space-around !important;
     align-items: center;
   }
   .presentacion iframe {
-    width: 50%;
-    height: 400px;
-    margin: 0;
+    width: 40% !important;
+    height: 400px !important;
+    margin: 0 !important;
     border-radius: 10px;
     margin-right: 5px;
   }
   .presentacion .divpres {
-    width: 50%;
-    height: 400px;
+    width: 40% !important;
+    height: 400px !important;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../../assets/fondopres.jpg);
+    background-image: url(../assets/fondopres.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     margin-left: 5px;
+  }
+  .presentacion .divpres h1 {
+    font-weight: bolder;
+    color: #222026;
+    text-shadow: 5px 5px 10px #B54312;
+  }
+  .presentacion .divpres p {
+    font-weight: bolder;
+    color: #222026;
+    text-shadow: 5px 5px 10px antiquewhite;
   }
   .cuatroindex {
     background-color: #222026;
@@ -134,11 +150,6 @@ footer div {
   justify-content: space-around;
 }
 
-.footaprende {
-  position: absolute;
-  bottom: 0;
-}
-
 @media screen and (min-width: 320px) and (max-width: 990px) {
   /*correcion al header*/
   .container-fluid {
@@ -151,6 +162,7 @@ footer div {
   }
   .me-auto {
     padding: 0 !important;
+    margin: 0px !important;
   }
   .navbar-toggler {
     display: inline;
@@ -158,8 +170,14 @@ footer div {
   .show {
     display: block;
   }
+  .barracolor {
+    height: 165px !important;
+  }
+  .nav-item {
+    padding: 5px 10px !important;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 990px) and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   /*index*/
   main .presentacion {
     display: flex;
@@ -183,7 +201,7 @@ footer div {
     justify-content: center;
     width: 75%;
     height: 300px;
-    background-image: url(../../assets/fondopres.jpg);
+    background-image: url(../assets/fondopres.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 150px;
@@ -214,6 +232,125 @@ footer div {
     padding: 5px;
     color: white;
     margin: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .vidrios {
+    background-color: #222026;
+    padding: 20px 10px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .vidrios section {
+    color: white;
+  }
+  .vidrios section img {
+    border-radius: 10px;
+    margin: 10px 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sectvidrios2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 300px);
+  }
+  .sectvidrios3 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 300px);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .sectaprende iframe {
+    width: 90%;
+    border-radius: 10px;
+    height: 315px;
+  }
+  .footaprende {
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sectaprende {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectaprende iframe {
+    margin-top: 20px;
+    height: 600px;
+    margin-bottom: 40px;
+    width: 90%;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .sectcontac {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .sectcontac .contacto {
+    background-color: #222026;
+    border-radius: 10px;
+    margin: 15px 10px;
+    padding: 10px 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sectcontac {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .sectcontac .contacto {
+    padding: 20px 250px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .sectprod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectprod .producto {
+    background-color: #222026;
+    padding: 15px 0;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 90%;
+  }
+  .sectprod .producto img {
+    border-radius: 10px;
+  }
+  .sectprod .producto p {
+    color: white;
+    margin: 5px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .producto {
+    margin-bottom: 30px !important;
+    width: 800px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: "itemimg1 itemp1";
+  }
+  .producto p {
+    margin-right: 30px !important;
   }
 }
 

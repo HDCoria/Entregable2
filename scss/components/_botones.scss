@@ -15,3 +15,6 @@
     background-color: $colordetransicion;
     }
 }
+.botoncontac{
+    @extend .botonredir
+}
