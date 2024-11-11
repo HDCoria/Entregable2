@@ -1,1 +1,1 @@
-Los videos no estan cargados porque no va mostrar la pagina ya que supera el limite de almacenamiento.
+Los videos estan traidos con un iframe desde youtube ya que pesan mucho para cargarlos en la carpeta assets
